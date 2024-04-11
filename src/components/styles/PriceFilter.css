@@ -1,0 +1,53 @@
+.container-price {
+ margin: 0.5em;
+}
+.price-form {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 100%;
+    border-radius: 0.8em;
+}
+.price-container {
+    display: flex;
+}
+.price-name {
+    padding: 0.3em;
+}
+.price-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.price-span {
+    color: rgb(59, 58, 55);
+}
+.price-input {
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    font-size: 0.8em;
+    padding: 0.4em;
+    outline: none;
+    border-radius: 10px;
+    width: 75%;
+    background-color: #fff;
+}
+.price-btn {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 5px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 13px;
+    padding: 0.5em 1em;
+    margin: 1em;
+    cursor: pointer;
+}
+button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+
+}

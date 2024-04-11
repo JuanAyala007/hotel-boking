@@ -1,0 +1,115 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+.card-register {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 300px;
+    height: 480px;
+    background: #ececec;
+    border-radius: 0.8em;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+  
+.title-register {
+    font-size: 28px;
+    color: #4169e1;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+.title-register::before,.title-register::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #4169e1;
+  }
+.title-register::before {
+    width: 18px;
+    height: 18px;
+    background-color: #4169e1;
+  }
+.title-register::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+  
+.container-register {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 6px;
+}
+  
+.register-label {
+    position: relative;
+}  
+.register-input {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #69696965;
+    border-radius: 10px;
+}
+.register-label .register-input  span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+.register-select {
+    border: none;
+    outline: none;
+    background-color: #313336;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    margin: 1em;
+}
+.register-btn {
+    border: none;
+    outline: none;
+    background-color: #4169e1;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+  
+.register-btn:hover {
+    background-color: rgb(56, 90, 194);
+}
+  
+@keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+}

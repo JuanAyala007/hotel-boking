@@ -1,0 +1,13 @@
+.card-hotels {
+    width: 100%;
+    margin-top: 2em;
+}
+.card-name-other-hotel {
+    margin: 1em;
+}
+.card-other-hotel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}

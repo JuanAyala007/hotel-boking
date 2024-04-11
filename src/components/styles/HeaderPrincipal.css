@@ -1,0 +1,32 @@
+.header-principal {
+    background: #4169e1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.header-name {
+    margin: 0.5em;
+}
+.header-nav {
+margin: 0.5em;
+}
+.header-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+
+    & :hover{
+        background-color: white;
+        color: black;
+        
+    }
+}
+.header-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 10px;
+}

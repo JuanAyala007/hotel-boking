@@ -1,0 +1,43 @@
+.reservation-card {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+   width: 300px;
+   height: 280px;
+   background: #ececec;
+   border-radius: 0.8em;
+   padding: 0.5em;
+}
+.reservation-title {
+margin: 5px;
+}
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.reservation-label {
+    position: relative;
+    margin: 0.4em;
+}
+.reservation-input {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #69696965;
+    border-radius: 10px;
+}
+.reservation-btn {
+    border: none;
+    outline: none;
+    background-color: #4169e1;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    margin: 0.5em;
+}
