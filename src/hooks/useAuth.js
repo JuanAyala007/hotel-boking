@@ -8,7 +8,7 @@ const useAuth = () => {
 
     //register
     const registerUser = (data) => {
-        const url = 'https://hotels-api.academlo.tech/users'
+        const url = 'https://hotels-app-jhw1.onrender.com/users'
         axios.post(url, data)
         .then(res => console.log(res.data))
         navigate("/login")
@@ -17,7 +17,7 @@ const useAuth = () => {
 
     //login 
     const loginUser = (data) => {
-        const url = 'https://hotels-api.academlo.tech/users/login'
+        const url = 'https://hotels-app-jhw1.onrender.com/users/login'
         axios.post(url, data)
         .then(res => {
             console.log(res.data) 

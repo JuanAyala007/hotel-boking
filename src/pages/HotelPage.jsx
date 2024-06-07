@@ -10,14 +10,14 @@ const HotelPage = () => {
 
   const { id } = useParams()
 
-  const url = `https://hotels-api.academlo.tech/hotels/${id}`
+  const url = `https://hotels-app-jhw1.onrender.com/hotels/${id}`
 
  const [hotel, gethotel] = useFetch(url)
 
  useEffect(() => {
-  gethotel()
- }, [id]) 
-
+   gethotel()
+  }, [id]) 
+   
 
 
   return (
@@ -30,7 +30,7 @@ const HotelPage = () => {
           {
            localStorage.getItem("token")
            ? <ReservationPage />
-           : <h4>if you wnat make a reservation, please <Link to={"/ligin"}>Login</Link></h4>
+           : <h4>if you wnat make a reservation, please <Link to={"/login"}>Login</Link></h4>
           }
         </div>
       
@@ -39,7 +39,7 @@ const HotelPage = () => {
       <section className='hotel-info'>
         <h3 className='hotel-city'>{hotel?.city.name}, {hotel?.city.country}</h3>
         <p className='hotel-address'>
-        <i class='bx bxs-map' ></i>
+        <i className='bx bxs-map' ></i>
         <span>{hotel?.address}</span>
         </p>
         <p className='hotel-description'>{hotel?.description}</p>

@@ -5,7 +5,7 @@ import '../components/styles/OtherHotel.css'
 
 const OtherHotels = ({hotel}) => {
 
-    const url = `https://hotels-api.academlo.tech/hotels?cityId=${hotel?.cityId}`
+    const url = `https://hotels-app-jhw1.onrender.com/hotels?cityId=${hotel?.cityId}`
 
   const [hotelsInCity, getHotelsInCity] = useFetch(url)
 
@@ -13,9 +13,8 @@ const OtherHotels = ({hotel}) => {
     getHotelsInCity()
   }, [hotel])
 
-  console.log(hotel, hotelsInCity)
 
-
+  
   return (
     <section className='card-hotels'>
         <h3 className='card-name-other-hotel'>Other hotels in <span>{hotel?.city.name}</span></h3>
