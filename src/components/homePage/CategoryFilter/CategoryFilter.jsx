@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import "../../styles/CategoryFilter.css";
 
 const CategoryFilter = () => {
-  const url = "https://hotels-app-jhw1.onrender.com/city";
+  const url = "https://hotels-api.academlo.tech/cities";
 
   const [cities, getCities] = useFetch(url);
 
@@ -19,9 +19,9 @@ const CategoryFilter = () => {
     let url;
 
     if (id) {
-      url = `https://hotels-app-jhw1.onrender.com/hotels?cityId=${id}`;
+      url = `https://hotels-api.academlo.tech/hotels?cityId=${id}`;
     } else {
-      url = 'https://hotels-app-jhw1.onrender.com/hotels';
+      url = "https://hotels-api.academlo.tech/hotels";
     }
     dispatch(getHotelsThunk(url));
   };
@@ -34,12 +34,15 @@ const CategoryFilter = () => {
         <select className="search-select">
           <option onClick={() => handleFilterCity()}>All cities</option>
 
-            {cities?.map((city) => (
-              <option onClick={() => handleFilterCity(city.id)} key={city.id}>
-                {city.name}
-              </option>
-            ))}
-
+          {cities?.map((city) => (
+            <option
+              className="search-select-option"
+              onClick={() => handleFilterCity(city.id)}
+              key={city.id}
+            >
+              {city.name}
+            </option>
+          ))}
         </select>
       </section>
     </div>
